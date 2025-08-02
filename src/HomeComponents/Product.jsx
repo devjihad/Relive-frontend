@@ -5,7 +5,7 @@ const Product = () => {
     const [product,setproduct]=useState([])
     // console.log(product)
     useEffect(()=>{
-        fetch('http://localhost:3000/product')
+        fetch('https://relive-backend-rqc8.vercel.app/product')
         .then(req=>req.json())
         .then(data=>setproduct(data))
     },[])
